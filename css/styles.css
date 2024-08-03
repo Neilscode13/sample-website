@@ -1,0 +1,318 @@
+body {
+  font-family:'Montserrat', sans-serif;
+  background-color:white;
+}
+
+/* this is where i put my photoshop background as an experiment ----------------- */
+#title {
+background-color:#3F4E4F;
+color:#DCD7C9;
+background-size: cover;
+background-image: url(/images/puppybackgroundwithopacity2.png);
+background-repeat: no-repeat;
+background-position:center;
+}
+
+.container-fluid {
+padding:3% 15% 8% 15%;  
+}
+
+.first-title {
+font-weight: 900;
+font-size: 3.5rem;
+line-height: 1.5;
+}
+
+h2 {
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 3.5rem;
+  margin-bottom: 3%;
+}
+
+@media (max-width: 990px){
+  .title-image{
+    position: relative;
+    top:20%;
+    transform: rotate(15deg);
+  }
+}
+
+/* navigation bar */
+.navbar {
+padding: 0 .5rem;
+}
+
+.navbar-brand {
+  color: #e4b58f;
+font-family:'Ubuntu', sans-serif;
+font-size: 2.5rem;
+font-weight: bold;
+position: relative;
+right:21.2%;
+}
+
+.navbar-brand:hover {
+color: #e9d6c7;
+}
+
+.nav-item {
+padding: 0 18px;
+position: relative;
+left: 25%;
+
+}
+
+.nav-link {
+font-size: 1.1rem;
+font-weight: lighter;
+}
+
+/* dwnlwd buttons */
+
+.download-button {
+margin: 5% 3% 5% 0;
+}
+
+/* title image */
+.title-image{
+width: 110%;
+margin-bottom: 5%;
+box-shadow: -10px 15px 10px 0px rgba(0,0,0,0.3);
+
+}
+/* features section  */
+h3 {
+font-weight: bold;
+}
+
+.features-h1{
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 5%;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+#features {
+  background-color:white ;
+padding: 5% 15% 5% 15%;
+position: relative;
+
+
+}
+
+/*this is the iphone experiment, making it go behind the nextbox 
+.iphone-image{
+  width: 10%;
+ position: absolute;
+ bottom: 2%;
+ left: 85%;
+ transform: rotate(45deg);
+}
+*/
+
+.feautre-box {
+text-align: center;
+padding: 5%;
+}
+
+.icon {
+color: #A27B5C;
+margin-bottom: 2rem;
+}
+
+.icon:hover {
+color: #d1a580;
+}
+
+
+/* testimonials section  */
+#testimonials {
+  background-color: #3F4E4F;
+  color: #DCD7C9;
+  text-align: center;
+}
+
+#car-item {
+  padding: 5% 15%;
+}
+
+.testimonial-text {
+  font-size: 2.5rem;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press {
+  background-color: #3F4E4F;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px 20px;
+}
+
+/* pricing section  */
+  .card-header {
+    background-color:#3F4E4F ;
+    color:#DCD7C9 ;
+  }
+
+#pricing {
+
+  text-align: center;
+  padding: 5% 15%;
+  margin: 0px;
+}
+
+.pricing-column {
+  padding: 3% 1%;
+  margin: 0%;
+}
+
+.pricing-icon{
+  width: 5rem;
+  margin: 7px;
+}
+
+/* section just before the footer  */
+#cta {
+  background-color: #3F4E4F;
+  padding: 5% 10% 8% 10%;
+  position: relative;
+  text-align: center;
+  
+}
+
+.cta-h3 {
+  color: #DCD7C9;
+  font-size: 400%;
+  line-height: 6rem;
+}
+
+/* footer */
+#footer{
+  text-align: center;
+  padding: 5%;
+}
+
+.footer-icons{
+  margin:20px 10px 
+  
+}
+
+.copyright {
+  color: rgb(107, 107, 107);
+}
+
+
+/* experimetn */
+.btn1 {
+ 
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid #000000;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-color: #e4b58f;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.btn1:hover {
+  background: #e9d6c7;
+  box-shadow: 0 0 30px 5px #e2bc9d;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.btn1:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+.btn1::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.btn1:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+
+
+
+
+
+
+
+
+/* another experimental from chatgpt  */
+.btn2 {
+  margin:5% 1% 1% 0%;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color:#e4b58f;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.btn2:hover {
+  padding: 15px 25px;
+  background-color: rgb(41, 3, 10);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+
+
